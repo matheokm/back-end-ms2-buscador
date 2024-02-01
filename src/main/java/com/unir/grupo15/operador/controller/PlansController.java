@@ -1,9 +1,8 @@
-package com.unir.grupo15.planes.controller;
+package com.unir.grupo15.operador.controller;
 
-import com.unir.grupo15.planes.model.pojo.Plan;
-import com.unir.grupo15.planes.service.PlanService;
+import com.unir.grupo15.operador.model.pojo.Plan;
+import com.unir.grupo15.operador.service.PlanService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -13,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;

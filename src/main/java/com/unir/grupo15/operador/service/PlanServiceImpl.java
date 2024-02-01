@@ -1,8 +1,8 @@
-package com.unir.grupo15.planes.service;
+package com.unir.grupo15.operador.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.unir.grupo15.planes.data.PlanRepository;
-import com.unir.grupo15.planes.model.pojo.Plan;
+import com.unir.grupo15.operador.data.PlanRepository;
+import com.unir.grupo15.operador.model.pojo.Plan;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
