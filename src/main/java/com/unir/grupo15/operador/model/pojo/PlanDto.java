@@ -1,4 +1,4 @@
-package com.unir.grupo15.planes.model.pojo;
+package com.unir.grupo15.operador.model.pojo;
 
 import lombok.*;
 

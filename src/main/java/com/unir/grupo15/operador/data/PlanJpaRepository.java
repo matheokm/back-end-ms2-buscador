@@ -1,6 +1,6 @@
-package com.unir.grupo15.planes.data;
+package com.unir.grupo15.operador.data;
 
-import com.unir.grupo15.planes.model.pojo.Plan;
+import com.unir.grupo15.operador.model.pojo.Plan;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

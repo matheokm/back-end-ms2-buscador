@@ -1,4 +1,4 @@
-package com.unir.grupo15.planes.config;
+package com.unir.grupo15.operador.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
