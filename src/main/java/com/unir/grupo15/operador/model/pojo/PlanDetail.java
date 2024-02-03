@@ -1,32 +1,27 @@
 package com.unir.grupo15.operador.model.pojo;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
-
 @Entity
-@Table(name = "plans")
+@Table(name = "plan_details")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @ToString
-public class Plan {
-
+public class PlanDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", unique = true)
-    private String name;
-
     @Column(name = "description")
     private String description;
 
-    @OneToMany (fetch = FetchType.LAZY, mappedBy = "plan")
-    @JsonManagedReference
-    private List<PlanDetail> planDetails;
+    @ManyToOne
+    @JoinColumn(name = "plan_id")
+    @JsonBackReference
+    private Plan plan;
 }

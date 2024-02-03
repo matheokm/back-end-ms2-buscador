@@ -15,4 +15,17 @@ public class PlanRepository {
     public List<Plan> getPlans() {
         return repository.findAll();
     }
+
+    public Plan getById(Long id) {
+        return repository.findById(id).orElse(null);
+    }
+
+    public Plan save(Plan plan) {
+        return repository.save(plan);
+    }
+
+    public void delete(Plan plan) {
+        repository.delete(plan);
+    }
+
 }

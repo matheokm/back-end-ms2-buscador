@@ -1,8 +1,6 @@
-package com.unir.grupo15.operador.model.pojo;
+package com.unir.grupo15.operador.model.request;
 
 import lombok.*;
-
-import java.util.List;
 
 @Getter
 @Setter
@@ -10,9 +8,8 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @ToString
-public class PlanDto {
+public class PlanRequest {
     private Long id;
     private String name;
     private String description;
-    private List<PlanDetailDto> planDetails;
 }
